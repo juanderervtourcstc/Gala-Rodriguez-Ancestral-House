@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gala Rodriguez Ancestral House</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-front-view">
+        <li class="text">Front view</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-grand-entrance">
+        <li class="text">Grand Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-ground-floor-">
+        <li class="text">Ground Floor </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-receiving-area">
+        <li class="text">Receiving Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-office-room-">
+        <li class="text">Office Room </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-ground-floor-">
+        <li class="text">Ground Floor </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-hallway-to-garage">
+        <li class="text">Hallway to Garage</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-garage-area">
+        <li class="text">Garage Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-dining-room">
+        <li class="text">Dining Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-terrace-">
+        <li class="text">Terrace </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-backdoor-">
+        <li class="text">Backdoor </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-swimming-pool-area">
+        <li class="text">Swimming Pool Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-staircase-">
+        <li class="text">Staircase </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-second-floor">
+        <li class="text">Second Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-second-floor-dining-room">
+        <li class="text">Second Floor Dining Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-receiving-area">
+        <li class="text">Receiving Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-main-sala">
+        <li class="text">Main Sala</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-front-balcony-">
+        <li class="text">Front Balcony </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-masters-bedroom">
+        <li class="text">Master&#39;s Bedroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-prayer-room">
+        <li class="text">Prayer Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-bedroom">
+        <li class="text">Bedroom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-second-floor-room">
+        <li class="text">Second Floor Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-storage-room">
+        <li class="text">Storage Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-basement">
+        <li class="text">Basement</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-basement-">
+        <li class="text">Basement </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-basement-">
+        <li class="text">Basement </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-basement-">
+        <li class="text">Basement </li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
